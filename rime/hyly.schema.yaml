@@ -1,0 +1,106 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: hyly
+  name:   胡言乱语
+  version: "2019.03.04"
+  author:
+    - 方案设计：Suk Honzeon
+  description: |
+    小鹤双拼+自然快手辅助码表
+punctuator:
+  import_preset: default
+
+switches:
+  - name: ascii_mode
+    states: [ CN, EN ]
+    reset: 0
+  - name: full_shape
+    states: [ ◖, ● ]
+    reset: 0
+  - name: _hide_candidate
+    states: [ ☑, ☒ ]
+    reset: 0 #候选窗开
+  - name: _hide_key_hint
+    states: [ ≑, ≟ ]
+    reset: 0 #上下标开
+    
+    
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator@custom_phrase
+    - table_translator
+  filters:
+    - simplifier
+#    - simplifier@jmfj
+    - uniquifier
+
+speller:
+  alphabet: 'zyxwvutsrqponmlkjihgfedcba'
+  delimiter: " '"
+  max_code_length: 4
+  auto_select: true
+  auto_select_pattern: ^;.$|^\w{4}$
+  auto_clear: max_length #manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  
+translator:
+  dictionary: hyly
+  enable_charset_filter: false
+  enable_completion: true
+  enable_sentence: false
+  enable_user_dict: false
+  
+ 
+#jmfj:
+#  opencc_config: s2t.json
+#  option_name: jmfj
+  
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_sentence: false
+  enable_completion: false
+
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: bracketleft, send: Page_Up, when: has_menu} # [上翻页
+    - {accept: bracketright, send: Page_Down, when: has_menu} # ]下翻页
+    - { when: has_menu, accept: ";", send: 2 }
+    - { when: has_menu, accept: "'", send: 3 }
+    - { when: composing, accept: "Tab", send: ; }
+    - {accept: period, send: period, when: has_menu}
+    - {accept: Release+semicolon, send: period, when: has_menu}
+   
+recognizer:
+  import_preset: default
+  patterns:
+   # uppercase: "" #中文状态大写锁定直接上屏
+    reverse_lookup: "[a-z`]*`+[a-z`]*"
+    punct: ""
+
+menu:
+  page_size: 3 #候选项数
+  
+style:
+  horizontal: true #竖排为false
+  

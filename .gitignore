@@ -1,0 +1,7 @@
+.idea
+target
+*.iml
+*.zip
+*.exe
+*.7z
+*.rar

@@ -1,0 +1,30 @@
+patch:
+  schema_list:
+  - schema: luna_pinyin_simp
+  - schema: double_pinyin_flypy
+  - schema: luna_pinyin_fluency
+  - schema: jyutping
+  - schema: wugniu
+  - schema: quick5
+  - schema: double_pinyin_mspy
+  - schema: bopomofo
+  - schema: luna_pinyin
+  - schema: luna_pinyin_tw
+  - schema: zyenpheng
+  - schema: double_pinyin_abc
+  - schema: double_pinyin
+  - schema: emoji
+  - schema: soutzoe
+  - schema: wugniu_lopha
+  - schema: pinyin_simp
+  - schema: terra_pinyin
+  - schema: wubi_pinyin
+  - schema: cangjie5
+  - schema: wubi86
+  - schema: flypy
+  - schema: flypyplus
+  - schema: hyly
+  switcher:
+    caption: 切换输入法
+    hotkeys:
+    - Control+grave

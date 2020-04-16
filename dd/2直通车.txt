@@ -26,7 +26,7 @@ $ddcmd(config(/do 界面),[界面项])	ojm#序13764
 $ddcmd(config(/do 码表),[码表项])	omb#序13761
 
 $ddcmd(set([-IME设置-],检索次显码表=否),[关闭])	osp#序13752
-$ddcmd(set([-IME设置-],检索次显码表=是),[+全码，音节，笔划])	osp#序13751
+$ddcmd(set([-IME设置-],检索次显码表=是),[+次显])	osp#序13751
 $ddcmd(set([-IME设置-],隐藏候选窗口=切换),[显隐候选窗])	occ#序13783
 $ddcmd(set([-IME设置-],输入方案=主),[小鹤快手])	opy#序13760
 $ddcmd(set([-IME设置-],输入方案=主+辅),[小鹤快手+词组])	opy#序13759
@@ -49,4 +49,3 @@ $ddcmd(<date.yyyy>年<date.m>月<date.d>日,<date.yyyy>年<date.m>月<date.d>日)	ori#
 $ddcmd(<date.z> <time.h>:<time.mm>,<date.z> <time.h>:<time.mm>)	ouj#序13753
 $ddcmd(keyboard(<35><36+Shift><46><36>),[删当前行])	oui#序13750
 $ddcmd(keyboard(<35><36+Shift><46>),[删当前行])	oiu#序13766
-

@@ -384,6 +384,7 @@
 绕	rcsq
 鸟	dnnh
 鸟	nnnh
+傻	uarp
 粗	cumq
 桑	shya
 贴	tpbb
@@ -424,7 +425,6 @@
 挪	nofv
 喔	ooku
 喔	woku
-啥	uakr
 哟	yoks
 嘎	gake
 虐	nthk
@@ -438,9 +438,10 @@
 窘	jsxx
 拽	vkfo
 剖	pzld
-岑	cfur
 诶	eiys
 拴	urfr
+伧	cfrr
+伧	ifrr
 呒	omke
 道	dcbz
 子	zilh
@@ -1389,7 +1390,6 @@
 闷	mfmx
 童	tslo
 朵	doja
-傻	uarp
 悉	xipx
 鸣	mkkn
 径	jkrs
@@ -1533,7 +1533,6 @@
 斩	vjij
 狱	yuqy
 俩	llrh
-俩	lxrh
 炮	pchb
 俱	jurj
 挣	vgfd
@@ -2052,7 +2051,6 @@
 烛	vuhi
 兹	ziby
 肢	viou
-综	zgsg
 壶	huuy
 栏	ljab
 览	ljuj
@@ -2111,6 +2109,7 @@
 糕	gcmb
 衬	ifyc
 倦	jrrb
+啥	uakr
 郝	hcte
 履	lvur
 汝	rudn
@@ -2720,7 +2719,7 @@
 殉	xyhb
 翟	dixv
 翟	zdxv
-盎	agkm
+盎	ahkm
 濒	bbdv
 簧	hlvg
 孺	ruzy
@@ -3023,6 +3022,7 @@
 髅	lzgm
 卦	gxtb
 妞	nqni
+唔	mkw
 珑	lswy
 胧	lsoy
 皓	hcbn
@@ -3126,6 +3126,7 @@
 麾	hvgm
 靓	llfj
 荀	xycb
+岑	cfur
 辎	ziiv
 矜	qbyr
 缥	pnsx
@@ -3537,9 +3538,8 @@
 枞	csar
 柙	xxao
 硎	xkek
+缯	zgsb
 髡	kyih
-伧	cfrr
-伧	ifrr
 棹	vcab
 棹	voab
 薮	szcm
@@ -3698,6 +3698,7 @@
 嫐	ncnt
 迺	ndxz
 奀	nfbd
+啱	ngku
 煖	nrha
 秾	nshg
 砲	pceb
@@ -3825,7 +3826,6 @@
 箐	jkvf
 箐	qkvf
 阚	hjmv
-嗄	uake
 恹	yjxi
 姹	iang
 仨	sars
@@ -4554,6 +4554,7 @@
 璪	zcwk
 牂	zhpy
 嗞	ziob
+
 
 的	de/
 一	yi/

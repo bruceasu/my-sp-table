@@ -24,25 +24,10 @@ for line in f2:
 	w = kv[0]
 	c = kv[1]
 
-	if c not in m:
-		if c in n:
-			if n[c] == 1:
-				n[c] += 1
-				print >> f3, line.encode("utf-8")
-			else:
-				pass # 不要这个词
-		else:
-			n[c] = 1
-			print >> f3, line.encode("utf-8")
+	if w in m:
+		print >> f3, line.encode("utf-8")
 	else:
-		if m[c] == 1:
-			if c not in n:
-				n[c] = 1
-				print >> f3, line.encode("utf-8")
-			else:
-				pass # 不要这个词
-		else:
-			pass # 不要这个词
+		pass # 不要这个词
 f2.close()
 
 f3.close

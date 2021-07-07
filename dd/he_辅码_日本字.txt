@@ -1452,6 +1452,7 @@
 贗	oyji
 択	ovdf
 悪	owux
+約	oyts
 倉	och
 岡	ogh
 爾	oer
@@ -2327,20 +2328,19 @@
 贗	oyj
 択	ovd
 悪	owu
+約	oyt
+#下面的字还没有部首定义
 倣	ofh
 搾	ova
-約	oyt
-約	oyc
 潟	oxi
 埼	oqi
-勲   xyh
+勲	xyh
 鞏	ogs
 鶓	omn
 蔘	ouf
 蔘	ocj
 蘚	oxm
 馱	oto
-馱	odo
 鷚	olq
 嚥	oyj
 嚥	oye

@@ -3,7 +3,7 @@
 ---config@码表别名=日文
 ---config@允许编辑=是
 
-平假名Hiragana	o
+#平假名	Hiragana
 あ	oa
 い	oi
 う	ou
@@ -58,7 +58,31 @@
 
 わ	owa
 を	owo
-ん	on
+ん	onn
+っ	oxtu
+ぁ	oxa
+ぃ	oxi
+ぅ	oxu
+ぇ	oxe
+ぉ	oxo
+ヶ	oxke
+ヵ	oxka
+ウィ	ouli
+ウェ	oule
+ウォ	oulo
+シェ	osye
+ジェ	ojye
+チェ	ocye
+ティ	oteli
+テュ	otelyu
+ディ	odeli
+デュ	odelyu
+トゥ	otolu
+ドゥ	odolu
+ファ	ofa
+フィ	ofi
+フェ	ofe
+フォ	ofo
 
 が	oga
 ぎ	ogi
@@ -132,7 +156,7 @@
 りゅ	oryu
 りょ	oryo
 
-片假名katakana	o
+#片假名	katakana
 ア	oa
 イ	oi
 ウ	ou
@@ -188,7 +212,7 @@
 ワ	owa
 ヲ	owo
 
-ン	on
+ン	onn
 
 ガ	oga
 ギ	ogi
@@ -1453,6 +1477,7 @@
 択	ovdf
 悪	owux
 約	oyts
+#不带部首
 倉	och
 岡	ogh
 爾	oer

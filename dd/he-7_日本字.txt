@@ -1,7 +1,7 @@
----config@允许编辑=是
----config@码表分类=辅码码表
+---config@码表分类=主码-7
 ---config@码表别名=日文
 ---config@允许编辑=是
+
 
 #平假名	Hiragana
 あ	oa

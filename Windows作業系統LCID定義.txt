@@ -1,0 +1,23 @@
+Windows作業系統
+Windows SDK規定，「語言」是與溝通有關的一組屬性的集合，包括所有允許的字元、通貨符號、日期時間格式等等。每個「語言」有一個語言名字與語言識別碼。語言往往還需要指出國家/地區，如「英語（美國）」使用的語言名字是「en-US」。
+
+每個地區設定（locale）是一個「語言」及一個排序規則。Windows XP支援超過150個地區設定（locale）；Windows Vista支援超過200個地區設定（locale）;Windows 7支援至少365個地區設定（locale）。每個地區設定（locale）有地區設定名字(Locale Name )與地區設定識別碼(Locale ID ,LCID )。例如："de-DE_phoneb"是德國德語使用德式電話薄排序規則（該排序規則與拉丁字母序稍有不同）。 「區域識別碼」(Locale ID ,LCID )為32位元的值，在程式設計中經常用到。LCID構成為：
+
++-------------+---------+-------------------------+-------------------------+
+|   Reserved  | Sort ID |     SubLanguage ID      |   Primary Language ID   |
++-------------+---------+-------------------------+-------------------------+
+31         20 19     16 15                    10  9                         0   bit
+
+LCID的低10位是主語言（primary language）的ID；高6位指定次語言（sublanguage）。LCID的低16位元稱為語言識別碼（language identifier），資料類型名為LANGID。例如，中文作為主語言，編號是0x04。作為次語言的台灣中文的編號是0x01；簡體中文的編號是0x02，香港中文是0x03，新加坡中文是0x04，澳門中文是0x05。因此，「中國大陸簡體中文」的區域識別碼等於次語言的標識0x02左移10位，再加上主語言的標識0x04，即(0x02<<10)+0x04=2052，所以簡體中文的LCID是2052。類似的，可以算出繁體中文的LCID是1028。美國英語的LCID是1033。使用Windows預定義宏，MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED)的結果也是2052。所有的語言-國家地區列表見：MSDN:Language Identifier Constants and Strings（頁面存檔備份，存於網際網路檔案館）
+
+
+语言包
+语言包
+语言/区域	语言/区域标记	语言/区域标识符	语言/区域十进制标识符
+中文（繁体，香港特别行政区）	zh-HK	0x0c04	3076
+注意： 不再使用。 请参阅 zh-TW。
+中文(简体，中国)	zh-CN	0x0804	2052
+中文(繁体，台湾)	zh-TW	0x0404	1028
+
+键盘标识符
+下表列出了可用于 Windows 的键盘标识符。 你还可以为其他键盘类型安装支持。 可为设备配置的有效键盘列在注册表项中： HKEY _ LOCAL _ MACHINE \ SYSTEM \ ControlSet001 \ Control \ 键盘布局

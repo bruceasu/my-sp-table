@@ -65,24 +65,6 @@
 ぅ	oxu
 ぇ	oxe
 ぉ	oxo
-ヶ	oxke
-ヵ	oxka
-ウィ	ouli
-ウェ	oule
-ウォ	oulo
-シェ	osye
-ジェ	ojye
-チェ	ocye
-ティ	oteli
-テュ	otelyu
-ディ	odeli
-デュ	odelyu
-トゥ	otolu
-ドゥ	odolu
-ファ	ofa
-フィ	ofi
-フェ	ofe
-フォ	ofo
 
 が	oga
 ぎ	ogi
@@ -287,6 +269,34 @@
 リャ	orya
 リュ	oryu
 リョ	oryo
+
+ウィ	ouli
+ウェ	oule
+ウォ	oulo
+シェ	osye
+ジェ	ojye
+チェ	ocye
+ティ	oteli
+テュ	otelyu
+ディ	odeli
+デュ	odelyu
+トゥ	otolu
+ドゥ	odolu
+ファ	ofa
+フィ	ofi
+フェ	ofe
+フォ	ofo
+
+ァ	oxap
+ィ	oxip
+ゥ	oxup
+ェ	oxep
+ォ	oxop
+ヶ	oxke
+ヵ	oxka
+ュ	oxyu
+ヮ	oxwa
+ヸ	oxwi
 
 あ	ojm
 ぁ	ojm

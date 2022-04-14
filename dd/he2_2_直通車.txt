@@ -1,14 +1,14 @@
 ---config@码表分类=主码-2
 ---config@码表别名=直通车
 ---config@允许编辑=是
-$ddcmd(run(D:\green\Snapshot.exe),[截图])	oss#序13600
-$ddcmd(run(D:\green\HandInput\handinput.exe),[手写])	oh#序13600
+
 $ddcmd(run(cmd.exe),[命令提示行])	com#序13600
 $ddcmd(run(excel.exe),[excel])	xls#序14277
 $ddcmd(run(winword.exe),[word])	doc#序13309
 $ddcmd(run(notepad.exe),[记事本])	note#序14184
 $ddcmd(run(mspaint.exe),[画图])	oht#序13767
 $ddcmd(run(calc.exe),[计算器])	ojs#序13762
+
 $ddcmd(run(::{20D04FE0-3AEA-1069-A2D8-08002B30309D}),[我的电脑])	odn#序13776
 $ddcmd(run(C:\\Program Files),[程序文件夹])	owj#序13749
 $ddcmd(run(%apppath%\\),[安装目录])	oaz#序13785
@@ -27,10 +27,10 @@ $ddcmd(config(/do 界面),[界面项])	ojm#序13764
 $ddcmd(config(/do 码表),[码表项])	omb#序13761
 
 $ddcmd(set([-IME设置-],检索次显码表=否),[关闭])	osp#序13752
-$ddcmd(set([-IME设置-],检索次显码表=是),[+次显])	osp#序13751
+$ddcmd(set([-IME设置-],检索次显码表=是),[+次显词汇])	osp#序13751
 $ddcmd(set([-IME设置-],隐藏候选窗口=切换),[显隐候选窗])	occ#序13783
 $ddcmd(set([-IME设置-],输入方案=主),[小鹤雨点])	opy#序13760
-$ddcmd(set([-IME设置-],输入方案=主+辅),[+切形·笔画·日文])	opy#序13759
+$ddcmd(set([-IME设置-],输入方案=主+辅),[+日文])	opy#序13759
 $ddcmd(set([-IME设置-],候选列表显示个数=5),[五个候选])	ohx#序13759
 $ddcmd(set([-IME设置-],候选列表显示个数=3),[三个候选])	ohx#序13759
 

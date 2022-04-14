@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-f1 = open(u'he2-字库.txt', encoding='utf-16le')
-f2 = open(u'he2-次显.txt', encoding='utf-16le')
+f1 = open(u'he_常用字库.txt', encoding='utf-16le')
+f2 = open(u'he_6_简码全码.txt', encoding='utf-16le')
 f3 = open(u'd.txt', 'w', encoding='utf-16le')
 
 

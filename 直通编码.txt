@@ -1,0 +1,73 @@
+直通编码
+功能
+通过编码实现打开指定网页、调用word、静音开关等操作
+
+词条格式
+$ddcmd(命令字符串,命令说明)+TAB符+编码
+
+命令字符串与命令说明中间以英文逗号分割
+
+$ddcmd：命令前缀，必须
+命令字符串：见下面列举
+命令说明：输入编码时，候选窗上提示内容
+
+命令字符串
+
+<time>
+
+取得当前时间，定义格式见列表（以8点18分01秒为例）
+
+例：$ddcmd(<time.h>:<time.mm>:<time.ss>,<time.h>:<time.mm>:<time.ss>)
+
+time.h	time.hh	time.H	time.HH
+8	08	八	零八
+time.m	time.mm	time.M	time.MM
+18	18	十八	十八
+time.s	time.ss	time.S	time.SS
+1	01	一	零一
+<date>
+
+取当前日期，定义格式如下（以输出当前日期效果：****年*月*日 为例）
+例：$ddcmd(<date.yyyy>年<date.m>月<date.d>日, <date.yyyy>年<date.m>月<date.d>日)
+大小写及单双数设置可参考<time>
+<last>
+
+last.1，取得最后一次上屏的字词
+例：$ddcmd(<last.1>,[重复输入])
+last.0，取得当前输入的字符
+例：$ddcmd(run(https://www.baidu.com/s?wd=<last.0>),[百度]：<last.0>)
+run(...)
+
+如果run()括号内是.exe文件，选择后运行该程序，非系统地址文件需写明地址
+例：$ddcmd(run(winword.exe),[word])
+打开文件夹或者文件，需写出文件夹或文件地址及名称
+例：$ddcmd(run(D:\小鹤音形\词库.txt),[我的词库])
+如果run()括号内是网址，选择后使用默认浏览器打开该网址
+例：$ddcmd(run(https://flypy.com),[小鹤官网])
+keyboard(...)
+
+模拟keyboard()括号内按键键值对应的按键输入括号内可指定多个按键键值
+如：keyboard(<65><66>)
+重复键值可用keyboard(<键值.重复数>)表示
+例：$ddcmd(keyboard(<173>),[静音开关])
+按键键值可在网上或用相关工具查阅
+newkey(...)
+
+转换当前输入编码为另一编码，选择后跳转另一编码的对应候选
+例：$ddcmd(newkey(ofbd),bd\2标点\3、，。)
+选择该候选则跳转标点编码ofbd
+()<>,\
+
+如果需要显示或上屏这些字符，请按下表中的替代值定义它们：
+字符	替代值
+,	\1
+(	\2
+)	\3
+<	\4
+>	\5
+\	\\
+换行符	\r
+制表符	\t
+空 格	\s
+注意：如果目录地址中正好出现替代值会被转换成所替代的字符，需用 \\ 来得到 \
+例：$ddcmd(run(D:\\study\files),[资料])

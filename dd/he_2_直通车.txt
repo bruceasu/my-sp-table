@@ -51,3 +51,6 @@ $ddcmd(<date.yyyy>年<date.m>月<date.d>日,<date.yyyy>年<date.m>月<date.d>日)	ori#
 $ddcmd(<date.z> <time.h>:<time.mm>,<date.z> <time.h>:<time.mm>)	ouj#序13753
 $ddcmd(keyboard(<35><36+Shift><46><36>),[删当前行])	oui#序13750
 $ddcmd(keyboard(<35><36+Shift><46>),[删当前行])	oiu#序13766
+$ddcmd(keyboard(<32+Alt><78>),[最小化])    ozx
+$ddcmd(keyboard(<83+Shift+Win>),[截屏])    ojp
+$ddcmd(keyboard(<68+Win>),[桌面])    ovm

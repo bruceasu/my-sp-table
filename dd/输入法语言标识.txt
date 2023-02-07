@@ -1,4 +1,23 @@
 //中文简体输入法该值应为2052
 //中文繁体（台湾）输入法该值应为1028
 //中文繁体（香港）输入法该值应为3076
+//日文1041
 输入法语言标识=3076
+
+完整的LCID列表：
+Locale ID (LCID) Chart
+Locale IDs Assigned by Microsoft
+有一个计算公式：primary language + 1024 * sub-language （主语言低位，子语言高位）
+见：What are these directories called 0409 and 1033?
+例如：
+中国 - 简体中文，Chinese-Simplified=LANG_CHINESE_SIMPLIFIED+1024*SUBLANG_CHINESE_SIMPLIFIED=4+1024*2=2052
+美国 - 英文，United States - English=LANG_ENGLISH+1024*SUBLANG_ENGLISH_US=9+1024*1=1033
+
+
+0x0411	Japanese (ja)	0x11	LANG_JAPANESE	Japan (JP)	0x01	SUBLANG_JAPANESE_JAPAN
+
+0x0c04	Chinese (zh); see note 1	0x04	LANG_CHINESE	Hong Kong SAR, PRC (HK)	0x03	SUBLANG_CHINESE_HONGKONG
+0x1404				Macao SAR (MO)	0x05	SUBLANG_CHINESE_MACAU
+0x1004				Singapore (SG)	0x04	SUBLANG_CHINESE_SINGAPORE
+0x0804	Chinese (zh)	0x04	LANG_CHINESE_SIMPLIFIED	Simplified (Hans)	0x02	SUBLANG_CHINESE_SIMPLIFIED
+0x0404	Chinese (zh)		LANG_CHINESE_TRADITIONAL	Traditional (Hant)	0x01	SUBLANG_CHINESE_TRADITIONAL

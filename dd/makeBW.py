@@ -2,7 +2,7 @@
 # coding: utf-8
 
 f1 = open(u'he_常用字库.txt', encoding='utf-16le')
-f2 = open(u'he_6_简码全码.txt', encoding='utf-16le')
+f2 = open(u'he_1_其他字库.txt', encoding='utf-16le')
 f3 = open(u'd.txt', 'w', encoding='utf-16le')
 
 
